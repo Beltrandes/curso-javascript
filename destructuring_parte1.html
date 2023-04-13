@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+    <script>
+        let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão', 'Morango']
+
+        //let [ a, b, c ] = frutas
+        let [ a, b, c, d, e = 'Banana'] = frutas
+
+        let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão', 'Morango'],['José', 'Maria ']]
+       
+        let [, [,n2]] = coisas
+
+        let [[, , pera]] = coisas
+
+        console.log(n2)
+        console.log(pera)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+       // netflix
+         throw new Error('Houve um erro mas não se preocupe, estamos trabalhando nisso agora.')
+       
+         var video = []
+       video[1] = []
+       video[1]['nome'] = 'Fullmetal Alchemist'
+       video[1]['categoria'] = 'Anime'
+
+       function getVideo(video) {
+            try {
+            // logica
+            // http
+                console.log(video[0]['nome'])
+            } catch(e) {
+                tratarErro(e)
+                console.log('Agora sim podemos tratar esse erro')
+            }
+            
+                finally {
+                console.log('Sempre passa por aqui (try / catch)')
+            }
+
+            console.log('A aplicação nao morreu')
+       }
+
+       getVideo(video)
+
+       function tratarErro(erro) {
+        console.log(erro)
+       }
+
+
+
+    </script>
+    
+</head>
+<body>
+   
+</body>
+</html>

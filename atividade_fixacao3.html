@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    
+    
+</head>
+<body>
+    <div>
+        <input type="text" id="caixa"/> 
+        <button onclick="adicionarPalavra()" type="button" id="adicionar">Adicionar</button>
+        <button onclick="ordenarPalavras()" type="button" id="ordenar">Ordenar</button>
+    </div>
+    
+</body>
+<script>
+    
+     var objetos = ['Cadeira', 'Impressora', 'Garfo']
+
+      function adicionarPalavra() {
+       var palavra = document.getElementById('caixa').value
+
+       if(palavra === '') {
+        alert('Informe um valor válido!')
+       } else if(objetos.indexOf(palavra) >= 0) {
+        alert('Objeto já foi adicionado.')
+       } else{
+        objetos.push(palavra)
+        document.getElementById('caixa').value = ''
+        console.log(objetos)
+       }
+      }
+
+      function ordenarPalavras() {
+        objetos.sort()
+        console.log(objetos)
+      }
+
+      
+    
+
+       
+    
+</script>
+</html>

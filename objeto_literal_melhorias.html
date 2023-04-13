@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhorias na notação de objetos literais </title>
+    <link rel="stylesheet" type="text/css" href="objeto_literal_melhorias.css">
+    <script>
+        let nome = document.getElementById('nome')
+        let idade = document.getElementById('idade')
+        let sexo = document.getElementById('sexo')
+        let profissao = document.getElementById('profissao')
+        
+        let objeto = {
+            nome: nome ,
+            idade: idade ,
+            sexo: sexo ,
+            profissao: profissao ,
+            exibirResumo: function() {
+                document.write(`Nome: ${this.nome}, Idade: ${this.idade}, Sexo: ${this.sexo} Profissão: ${this.profissao}`)
+            }
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div class="tela">
+            <div class="forms">
+                <div class="nome">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome">
+                </div>    
+                <div class="nome">
+                    <label for="idade">Idade: </label>
+                    <input type="number" id="idade">
+                </div>    
+                <div class="sexo">
+                    <label for="sexo">Sexo: </label>
+                    <select id="sexo">
+                        <option value="selecione"> -- Selecione seu sexo -- </option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </div>    
+                <div class="profissao">
+                    <label for="profissao">Profissao: </label>
+                    <input type="text" id="profissao">
+                </div>    
+                <div class="botao">
+                    <button type="button" id="botao" onclick="objeto.verResumo()">Ver resumo</button>
+                </div>    
+
+
+                
+            </div>
+        </div>
+        <div class="resumo"></div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        var data = new Date()
+
+       /* // document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+
+        //adicionar / remover dias
+
+        document.write(data.toString())
+        data.setDate(data.getDate() - 1)
+        document.write('<hr />')
+        document.write(data.toString())
+
+         //adicionar / remover meses
+
+        document.write(data.toString())
+        data.setMonth(data.getMonth() - 2)
+        document.write('<hr />')
+        document.write(data.toString())
+
+        //adicionar / remover anos
+
+        document.write(data.toString())
+        data.setFullYear(data.getFullYear() - 3)
+        document.write('<hr />')
+        document.write(data.toString())
+        */
+
+        // 05/06/1998
+
+        var data1 = new Date(1998, 05, 05)
+        var dataK = new Date(1997, 0, 21)
+
+        var data = new Date
+
+        document.write(data1.toString())
+        document.write('<hr />')
+        document.write(data.toString())
+        document.write('<br /><br /><hr />')
+
+        //converter datas para algo calculavel
+        document.write(data1.getTime())
+        document.write('<hr />')
+        document.write(data.getTime())
+
+        // encontrar quantidade de milissegundos entre data1 e data
+        document.write('<br /><br /><hr />')
+        document.write(data.getTime() - data1.getTime())
+        var milissegundos_entre_datas = data.getTime() - data1.getTime()
+        var milissegundos_entre_eu_e_K = data1.getTime() - dataK.getTime()
+        // 1 dia tem 24h, cada hora tem 60 minutos, cada minuto tem 60 segundos, cada segundo tem 1000 milissegundos.
+        // quantos milissegundos existem em um dia ?
+        var dia = (1*24*60*60*1000)
+        var dias = milissegundos_entre_datas / dia  
+        var diasK = milissegundos_entre_eu_e_K / dia
+        document.write('1 dia tem: ' + (1*24*60*60*1000) + ' milissegundos.')
+
+        document.write('<br /><br /><hr />')
+
+        document.write('Eu estou na  terra há ' + Math.round(dias) + ' dias.')
+
+        document.write('<br /><br /><hr />')
+
+        document.write('A diferença de idade entre eu e a Karol é de: ' + Math.round(diasK) + ' dias.')
+
+
+
+
+
+
+
+    </script>
+    
+</head>
+<body>
+    
+    
+</body>
+</html>

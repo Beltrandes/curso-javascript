@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+      var listaFrutas = ['Banana', 'Maçã', 'Morango', 'Uva']
+
+      var f = function(valor) {
+        document.write(valor + '<br/>')
+      }
+
+      listaFrutas.forEach(f)
+      document.write('<hr/>')
+
+      x = 1
+      y = 1
+
+        while(x <= 10) {
+            y =1 
+            while(y <= 10) {
+                document.write(y + ' X ' + x + ' = ' + (y * x) + '<br/>')
+                y++
+            }
+            x++
+            document.write('<hr/>')
+        }
+
+       
+    </script>
+    
+</head>
+<body>
+    
+    
+</body>
+</html>
